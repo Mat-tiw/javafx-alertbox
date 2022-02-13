@@ -7,14 +7,14 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class alertBox{
-    Stage window = new Stage();
-    Label label = new Label();
+    static Stage window = new Stage();
+    static Label label = new Label();
     //if you want to change text in button
     //you can change at Button() method
-    Button button = new Button("close");
-    VBox layout;
-    Scene scene;
-    public void alertDisplay(String title,String message){
+    static Button button = new Button("close");
+    static VBox layout;
+    static Scene scene;
+    public static void alertDisplay(String title,String message){
 
         //will not let user to interact until this window is close
         window.initModality(Modality.APPLICATION_MODAL);
